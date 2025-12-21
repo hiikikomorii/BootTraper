@@ -1,5 +1,5 @@
-# Boottraper
-## Смысл boottraper в том, чтобы заменить ошибку NoModuleFoundError
+# BootsTrapper
+## Смысл BootsTrapper в том, чтобы заменить ошибку NoModuleFoundError
 ![main](assets/bsod_preview_blue.png)
 ***
 [Функции](#функции) | [Как использовать?](##как-использовать) | [Установка](#установка)
@@ -36,13 +36,13 @@ subprocess.Popen(["cmd", "/c" , sys.executable, str(boot_path)], creationflags=s
 root.destroy() # желательно, если у вас tkinter/Ctkinter, чтобы main не запустился вместе с boottraper
 sys.exit() # предохранитель для root.destroy, если у вас gui
 ```
-**Теперь, будет запускаться бесконечная проверка: ``main -> error -> boottraper``, и ``boottraper -> if success -> main -> main scr``**
+**Теперь, будет запускаться бесконечная проверка: ``main -> error -> bootstrapper``, и ``bootstrapper -> if success -> main -> main scr``**
 **Это нужно для того, чтобы запускать сразу ваш main-файл и не ждать проверки через boottraper, но если ваш main в начале поймает except то**  
 **автоматически запустится bootttaper**
 ***
 ## Установка
-* **Скачать ``boottraper.py``**
+* **Скачать ``bootstrapper.py``**
 * **Закинуть файл в свою сборку**
 * **Следовать [указаниям](#как-использовать)**
 ***
-**Links: [telegram](https://t.me/hidlow) | [В начало](#boottraper)**
+**Links: [telegram](https://t.me/hidlow) | [В начало](#bootstrapper)**
